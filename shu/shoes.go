@@ -25,7 +25,7 @@ func (shoes *Shoes) Add(newShoes ...GitHubIssue) (err error) {
 
 func (shoes *Shoes) add(issue GitHubIssue) error {
 	for _, shu := range shoes.I {
-		if issue.RepoURL() == shu.RepoURL() {
+		if issue.IssueURL() == shu.IssueURL() {
 			return fmt.Errorf("issue already tracked, %q", shu)
 		}
 	}
