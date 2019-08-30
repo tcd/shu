@@ -1,27 +1,26 @@
-.DEFAULT_GOAL := help
-
-SHELL := /bin/bash
+GO ?= go
+SHELL := /bin/sh
+GOBIN_DIR=${GOBIN}
 PROJECT_DIR=$(shell pwd)
 PROJECT_NAME=$(shell basename $(PROJECT_DIR))
 
+build:
+	GO111MODULE=on $(GO) build -o build/$(PROJECT_NAME)
+
+clean:
+	$(GO) clean ./...
+	rm -rf build
+
+# Run all tests for the project.
 test:
 	go test -v ./...
 
-cmd:	
-	@cd ./cmd/$(PROJECT_NAME) && go run *.go
+# Install shu to $GOBIN.
+install:
+	GO111MODULE=on $(GO) install
 
-all:
-	@echo "Nothing to do for all"
+# Remove shu from $GOBIN.
+uninstall:
+	@rm -f $(GOBIN_DIR)/$(PROJECT_NAME)
 
-build:
-	@echo "Nothing to do for build"
-
-clean:
-	@echo "Nothing to do for clean"
-
-help:	
-	@echo
-	@echo "  test – run 'go test' for the entire project"
-	@echo
-
-.PHONY: all build clean test help cmd
+.PHONY: build clean test install uninstall
