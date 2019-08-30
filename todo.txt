@@ -1,1 +1,2 @@
 x 2019-08-30 2019-08-24 Ensure duplicate issues aren't added.
+2019-08-30 Track all issues for a repo.
