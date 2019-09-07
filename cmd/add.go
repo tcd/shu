@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"fmt"
 	"log"
 	"os"
 
@@ -30,7 +31,7 @@ var addCmd = &cobra.Command{
 		if err != nil {
 			log.Fatal(err)
 		} else {
-			log.Println("New issue added: ", newIssue)
+			fmt.Println("New issue added: ", newIssue)
 			os.Exit(0)
 		}
 	},
