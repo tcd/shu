@@ -1,10 +1,20 @@
 package shu
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 // Shoes is a wrapper around a slice of GitHubIssue.
 type Shoes struct {
 	I []GitHubIssue
+}
+
+// SortByRepo
+func (shoes *Shoes) SortByRepo() {
+	sort.Slice(shoes.I, func(i, j int) bool {
+		return shoes.I[i].Repo() < shoes.I[j].Repo()
+	})
 }
 
 // Save writes issues to a user's issues.json file.

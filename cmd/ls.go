@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"fmt"
 	"log"
 	"os"
 
@@ -17,6 +18,7 @@ var lsCmd = &cobra.Command{
 		if err != nil {
 			log.Fatal(err)
 		}
+		shoes.SortByRepo()
 
 		table, _ := cmd.Flags().GetBool("table")
 		if table {
@@ -24,8 +26,16 @@ var lsCmd = &cobra.Command{
 			os.Exit(0)
 		}
 
+		url, _ := cmd.Flags().GetBool("url")
+		if url {
+			for _, shu := range shoes.I {
+				fmt.Println(shu.IssueURL())
+			}
+			os.Exit(0)
+		}
+
 		for _, shu := range shoes.I {
-			log.Println(shu)
+			fmt.Println(shu)
 		}
 		os.Exit(0)
 	},
@@ -34,4 +44,5 @@ var lsCmd = &cobra.Command{
 func init() {
 	rootCmd.AddCommand(lsCmd)
 	lsCmd.Flags().Bool("table", false, "Print issues in table format.")
+	lsCmd.Flags().Bool("url", false, "Print issue urls")
 }
