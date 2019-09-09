@@ -19,13 +19,14 @@ const (
 
 // GitHubIssue models a GitHub issue.
 type GitHubIssue struct {
-	RepoOwner string    `json:"repoOwner"`
-	RepoName  string    `json:"repoName"`
-	Number    int       `json:"number"`
-	Title     string    `json:"title"`
-	Open      bool      `json:"open"`
-	CreatedAt time.Time `json:"createdAt"`
-	UpdatedAt time.Time `json:"updatedAt"`
+	RepoOwner    string    `json:"repoOwner"`
+	RepoName     string    `json:"repoName"`
+	Number       int       `json:"number"`
+	Title        string    `json:"title"`
+	Open         bool      `json:"open"`
+	CreatedAt    time.Time `json:"createdAt"`
+	UpdatedAt    time.Time `json:"updatedAt"`
+	TrackedSince time.Time `json:"trackedSince"` // timestamp from when the issue was added to shu.
 }
 
 func (shu GitHubIssue) String() string {

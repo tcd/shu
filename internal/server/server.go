@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/gobuffalo/packr/v2"
-	"github.com/tcd/shu/shu"
+	"github.com/tcd/shu/internal/shu"
 )
 
 var tmpl *template.Template

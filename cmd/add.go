@@ -6,7 +6,7 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	shu "github.com/tcd/shu/shu"
+	"github.com/tcd/shu/internal/shu"
 )
 
 // addCmd represents the add command
