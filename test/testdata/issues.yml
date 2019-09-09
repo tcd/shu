@@ -1,0 +1,79 @@
+---
+issues:
+  - link: https://github.com/webpack-contrib/extract-text-webpack-plugin/issues/701
+    name: Webpack 4 compatibility
+  - link: https://github.com/Microsoft/TypeScript/issues/22082
+    name: ES2018 RegExp named capture groups not supported with esnext library
+  - link: https://github.com/sbdchd/neoformat/issues/51
+    name: support eslint --fix
+  - link: https://github.com/sbdchd/neoformat/issues/106
+    name: Run formatters asynchronously
+    awaiting: https://github.com/sbdchd/neoformat/commit/34d049fd82d86206ef0c153f886c9f5dc84f5494
+  - link: https://github.com/j-bennet/wharfee/issues/160
+    name: Provide Dockerfile and maintain image on docker hub
+  - link: https://github.com/GoogleChrome/lighthouse/issues/2784
+    name: '"Unable to load the page" ☂ bug'
+  - link: https://github.com/koajs/kick-off-koa/issues/56
+    name: Update to support Koa 3 version
+  - link: https://github.com/electron-userland/electron-builder/issues/638
+    name: node-gyp fails build because it can't find python2
+  - link: https://github.com/VSCodeVim/Vim/issues/1724
+    name: Add neovim integration
+  - link: https://github.com/lunixbochs/ActualVim/issues/106
+    name: VSCodeVim complaints
+  - link: https://github.com/kentcdodds/nps/issues/123
+    name: Add npsl (nps list) binary
+  - link: https://github.com/alefragnani/vscode-project-manager/issues/151
+    name: Support save *Workspaces* as projects
+    depends-on: https://github.com/Microsoft/vscode/issues/37421
+  - link: https://github.com/file-icons/vscode/issues/10
+    name: Extension overrides filename.
+  - link: https://github.com/webpack/webpack/issues/6572
+    name: Exporting JS from an inline loader that consumes a JSON file
+  - link: https://github.com/Microsoft/TypeScript/issues/6579
+    name: "Suggestion: Regex-validated string type"
+    depends-on: https://github.com/Microsoft/TypeScript/pull/21044
+  - link: https://github.com/yeoman/yo/issues/551
+    name: Tab completion
+  - link: https://github.com/rollup/rollup-plugin-babel/issues/120
+    name: Latest babel preset doesn't work with rollup
+  - link: https://github.com/nodejs/node/issues/16605
+    name: node --experimental-modules does not allow running files without an extension
+  - link: https://github.com/Microsoft/TypeScript/issues/4833
+    name:
+
+
+
+pulls:
+  - https://github.com/neovim/node-client/pull/54
+  - https://github.com/ryanoasis/nerd-fonts/pull/249
+  - link: https://github.com/nodejs/node/pull/18392
+    name: "esm: Implement esm mode flag"
+
+forks:
+  - https://github.com/fatih/vim-go
+  - https://github.com/Shougo/denite.nvim
+  - https://github.com/Shougo/deoplete.nvim
+  - https://github.com/alecthomas/chroma
+
+repos:
+  - https://github.com/tc39/proposal-regexp-named-groups
+  - https://github.com/ezolenko/rollup-plugin-typescript2
+  - https://github.com/TypeStrong/ts-node
+  - https://github.com/rgburke/grv
+  - https://github.com/jonsmithers/vim-html-template-literals
+  - https://github.com/Microsoft/language-server-protocol
+  - https://github.com/json-schema-org/json-schema-spec
+  - https://github.com/gnachman/iTerm2
+  - https://github.com/neovim/neovim
+  - https://github.com/Chillee/VSCodeNeovim
+  - https://github.com/Polymer/lit-html
+  - https://github.com/kentcdodds/nps
+  - https://github.com/saojs/sao
+  - https://github.com/saojs/kopy
+  - https://github.com/bergmeister/posh-dotnet
+  - https://github.com/Microsoft/vscode-textmate
+  - https://github.com/tc39/proposal-decorators
+  - https://github.com/jstemmer/gotags
+  - https://github.com/w3c/ServiceWorker
+  - https://github.com/lhc70000/iina

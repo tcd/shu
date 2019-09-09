@@ -1,0 +1,11 @@
+https://github.com/jung-kurt/gofpdf/issues/270
+https://github.com/jung-kurt/gofpdf/issues/255
+https://github.com/jung-kurt/gofpdf/issues/241
+https://github.com/jung-kurt/gofpdf/issues/161
+https://github.com/jung-kurt/gofpdf/issues/166
+https://github.com/signintech/gopdf/issues/81
+https://github.com/angular/components/issues/2936
+https://github.com/rust-lang/cargo/issues/2729
+https://github.com/spf13/cobra/issues/107
+https://github.com/badges/shields/issues/1529
+https://github.com/gizak/termui/issues/209
