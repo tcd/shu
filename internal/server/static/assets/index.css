@@ -1,0 +1,23 @@
+html, body, .app {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+header, footer {
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  padding: 2%
+}
