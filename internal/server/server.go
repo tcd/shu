@@ -35,7 +35,7 @@ func ServeToPort(portNumber string) {
 	http.HandleFunc("/", indexHandler)
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(box)))
 
-	fmt.Printf("Live an localhost:%s\n", portNumber)
+	fmt.Printf("Web Server is available at http://localhost:%s/\n", portNumber)
 	err := http.ListenAndServe(":"+portNumber, nil)
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
@@ -56,7 +56,7 @@ func Serve() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("Live at localhost:%v\n", listener.Addr().(*net.TCPAddr).Port)
+	fmt.Printf("Web Server is available at http://localhost:%v/\n", listener.Addr().(*net.TCPAddr).Port)
 	err = http.Serve(listener, nil)
 	if err != nil {
 		log.Fatal(err)
